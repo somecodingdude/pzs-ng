@@ -1192,7 +1192,7 @@
 
 #ifndef sample_types
 #define sample_types_is_defaulted
-#define sample_types                               "mpg,mpeg,m2v,m2p,avi,mkv,mov,mp4,wmv,vob,ts,jpg,jpeg,png"
+#define sample_types                               "mpg,mpeg,m2v,m2p,avi,mkv,mov,mp4,wmv,vob,ts,jpg,jpeg,png,m2ts"
 #endif
 
 #ifndef sfv_calc_single_fname
