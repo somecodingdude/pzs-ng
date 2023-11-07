@@ -520,7 +520,7 @@ options:
         type: string
         comment: |-
             Comma-separated list of file extensions considered to be sample files.
-        default: '"mpg,mpeg,m2v,m2p,avi,mkv,mov,mp4,wmv,vob,ts,jpg,jpeg,png"'
+        default: '"mpg,mpeg,m2v,m2p,avi,mkv,mov,mp4,wmv,vob,ts,jpg,jpeg,png,m2ts"'
 
     video_types:
         type: string
