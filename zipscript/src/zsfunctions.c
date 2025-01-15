@@ -472,7 +472,7 @@ unlink_missing(char *s)
 char 
 israr(char *fileext)
 {
-	if ((*fileext == 'r' || *fileext == 's' || isdigit(*fileext)) &&
+	if ((*fileext == 'r' || *fileext == 's' || *fileext == 't' || *fileext == 'u' || *fileext == 'v' || *fileext == 'w' || *fileext == 'x' || isdigit(*fileext)) &&
 	    ((isdigit(*(fileext + 1)) && isdigit(*(fileext + 2))) ||
 	     (*(fileext + 1) == 'a' && *(fileext + 2) == 'r')) &&
 	    *(fileext + 3) == 0)
