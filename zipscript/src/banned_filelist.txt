@@ -643,6 +643,7 @@ tsf98.nfo
 tt.nfo
 tur.nfo
 tv.nfo
+tvmaze.nfo
 twh.nfo
 twilight.nfo
 tvm.nfo
