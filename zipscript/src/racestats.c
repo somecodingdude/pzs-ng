@@ -105,35 +105,6 @@ main(int argc, char **argv)
 	}
 
 	readrace(g.l.race, &g.v, g.ui, g.gi);
-
-	// TODO: remove
-	#ifdef 0
-	/* 
-	 NOTE: 
-	 
-	 this is 'fixed' code previously unexecuted
-	 we leave it unexecuted for backwards compatibility
-	 Only if no sfv data was present, missing files would
-	 be subtracted which anyway already happens in the
-	 convert method below
-	*/ 
-
-	sprintf(g.l.sfv, storage "/%s/sfvdata", argv[1]);
-
-	// check missing files
-	if (fileexists(g.l.sfv)) {
-		readsfv(g.l.sfv, &g.v, 0);
-	} else if (findfileext(g.l.path, ".zip")) {
-		// re-read files from diz
-		g.v.total.files = read_diz();
-		// files_missing is negative,  
-		g.v.total.files_missing += g.v.total.files;
-	} else {
-		g.v.total.files -= g.v.total.files_missing;
-		g.v.total.files_missing = 0;
-	}
-	#endif
-
 	sortstats(&g.v, g.ui, g.gi);
 	if (g.v.total.users) {
 		printf("%s\n", convert(&g.v, g.ui, g.gi, stats_line));
